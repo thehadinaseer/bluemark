@@ -3,7 +3,7 @@
 Welcome to Blue Mark Real Estate! Our mission is to provide professional and reliable property solutions in Dubai. Find your dream home or investment opportunity with us. 🌟
 
 ## Live Demo 🌐
-Check out our website here: [Blue Mark Real Estate](https://www.bluemarkae.com)
+Check out our website now on here: [Blue Mark Real Estate](https://thehadinaseer.github.io/bluemark) <br>
 Check out our website here: [Blue Mark Real Estate](https://www.bluemarkae.com)
 
 ## Description 📖
