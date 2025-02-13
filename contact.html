@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/preview.jpeg">
+    <!-- Apple Touch Icon (For iOS Devices) -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <script src="https://kit.fontawesome.com/9cba8e96cc.js" crossorigin="anonymous"></script>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            display: none;
+            margin-top: 10px;
+        }
+
+        .navbar-item img {
+            max-height: 50px;
+        }
+
+        .navbar-end .navbar-item {
+            font-size: 30px;
+            padding-left: 80vw;
+        }
+
+        .navbar-end .icon {
+            font-size: 38px; 
+        }
+
+        .navbar-burger {
+            display: none;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .navbar-burger {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .navbar-end .navbar-item {
+                padding-left: 50vw;
+                padding-top: 25px;
+            }
+
+            .navbar-end {
+                justify-content: center; 
+            }
+        }
+
+        .contact-heading {
+            font-size: 2.5em;
+            color: rgba(33,92,162,255);
+            margin-bottom: 0.5em;
+        }
+
+        .contact-subheading {
+            font-size: 1em;
+            color: #696767;
+            margin-bottom: 1.5em;
+        }
+
+        .section {
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="images/logo.png" alt="Company Logo">
+            </a>
+            <div class="navbar-end">
+                <a role="button" class="navbar-item" href="/">
+                    <span class="icon">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <!-- Main Section -->
+    <section class="section">
+        <div>
+            <h1 class="title has-text-centered contact-heading">Contact Us</h1>
+            <p class="has-text-centered contact-subheading">Fill out this inquiry form and we'll reach out to you!</p>
+            <form id="contactForm" action="contact.php" method="POST">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="text" name="name" id="name" placeholder="Your Name" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="email" name="email" id="email" placeholder="Your Email" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" name="message" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-link is-fullwidth" type="submit">Send Message</button>
+                    </div>
+                </div>
+                <p class="error-message" id="error-message">All fields are required. Please fill in the missing information.</p>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Form validation
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                const errorMessage = document.getElementById('error-message');
+
+                if (name === '' || email === '' || message === '') {
+                    event.preventDefault(); // Prevent form submission
+                    errorMessage.style.display = 'block';
+                } else {
+                    errorMessage.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
