@@ -39,6 +39,12 @@
     border-bottom-left-radius: 140px;
 }
 
+.radius-cut-special {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 5px;
+}
+
 /* Adding Color to Hero's Heading */
 .custom-color {
     color: rgba(33, 92, 162, 255);
@@ -73,6 +79,10 @@
 /* Changing About Column Background Color  */
 .merina {
     background-color: aliceblue;
+}
+
+.read-more-toggle {
+    color: #1449f7;
 }
 
 /* Smooth Scroll  */
@@ -152,3 +162,191 @@ html {
     /* Even darker blue */
     transform: translateY(2px);
 }
+
+/* Unique Contact Section Enhancements */
+
+.unique-container2 {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#contact .unique-container {
+    background: aliceblue;
+    border-radius: 8px;
+    padding: 3rem 5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact .unique-container-2 {
+    background: aliceblue;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.unique-contact-subheading {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.box.unique-background-light {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.unique-social-icons {
+    margin-top: 1rem;
+}
+
+.unique-social-icons .icon {
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+.unique-social-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+.unique-error-message {
+    margin-top: 1rem;
+    color: red;
+}
+
+/* Properties Section  */
+.property-cards {
+    display: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.property-cards.is-visible {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+}
+
+.property-card {
+    flex: 0 0 30%;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.property-card img {
+    max-width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.property-card p {
+    text-align: left;
+}
+
+.navigation-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+@media (max-width: 1024px) {
+    .property-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .property-card {
+        flex: 0 0 calc(100% - 20px);
+        margin: 10px auto;
+    }
+}
+
+
+/* Custom Scroll Bar  */
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(33, 92, 162, 255);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(20, 56, 120, 255);
+    /* Darker shade */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(33, 92, 162, 255) #f1f1f1;
+}
+
+/* Scrollable Images  */
+
+.scrollable-images {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.scrollable-images img {
+    flex-shrink: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
+

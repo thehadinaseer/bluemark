@@ -50,17 +50,15 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start is-size-6">
                 <a class="navbar-item" href="#home">Home</a>
-                <a class="navbar-item" href="#about">About</a>
                 <a class="navbar-item" href="#services">Services</a>
-                <a class="navbar-item" href="#testimonials">Reviews</a>
-                <a class=" is-hidden-widescreen-only is-hidden-desktop-only mt-2 button is-rounded button-custom"
-                    href="contact.html">Contact Us</a>
-
+                <a class="navbar-item" href="#properties">Properties</a>
+                <a class="navbar-item" href="#contact">Contact</a>
+                <a class="is-unselectable is-hidden-widescreen-only is-hidden-desktop-only mt-2">-----------</a>
             </div>
 
             <div class="navbar-item navbar-end pr-6 has-text-centered is-hidden-mobile is-hidden-tablet-only">
                 <div class="buttons">
-                    <a class="button is-rounded button-custom" href="contact.html">Contact Us</a>
+                    <a class="is-unselectable">-----------</a>
                 </div>
             </div>
 
@@ -76,14 +74,30 @@
                     <!-- Text Content  -->
                     <div class="column fixed-width">
                         <h1 class="title custom-color custom-lineheight">
-                            Helping you find the <br> property of your <br> dreams.
+                            Welcome to BlueMark.
                         </h1>
                         <h2 class="subtitle pt-3">
                             Creating quality urban lifestyles, building stronger communities all over Dubai.
                         </h2>
-                        <a href="#services" class="button button-custom">
-                            Learn More
-                        </a>
+                        <!-- Services with Tick Icon  -->
+                        <div style="color: black;">
+                            <span class=""><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"></span>
+                                Buying</span></span>
+                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Selling</span></span>
+                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Leasing</span></span>
+                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Property Management</span></span>
+                            <div class="pt-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Mortgages</span></div>
+                        </div>
+                        <div>
+                            <a href="#contact" class="button button-custom mt-5">
+                                Get in touch
+                            </a>
+                        </div>
                     </div>
                     <!-- Image Content  -->
                     <div class="column">
@@ -109,42 +123,68 @@
                     <!-- Text Content  -->
                     <div class="column fixed-width">
                         <h1 class="title custom-color custom-lineheight is-size-3">
-                            Helping you find the <br> property of your <br> dreams.
+                            Welcome to BlueMark.
                         </h1>
                         <h2 class="subtitle pt-3">
                             Creating quality urban lifestyles, building stronger communities all over Dubai.
                         </h2>
-                        <a href="contact.html" class="button button-custom">
-                            Learn More
-                        </a>
+                        <!-- Services with Tick Icon  -->
+                        <div style="color: black;">
+                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Buying</span></span>
+                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Selling</span></span>
+                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Leasing</span></span> <br>
+                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Property Management</span></span>
+                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
+                                    class="is-size-6"> Mortgages</span></span>
+                        </div>
+                        <div>
+                            <a href="#contact" class="button button-custom mt-4">
+                                Get in touch
+                            </a>
+                        </div>
                     </div>
                     <!-- Image Content  -->
                     <div class="column">
                         <figure class="image is-3by2">
-                            <img class="radius-cut" src="images/hero2.0.jpg" alt="Cityscape">
+                            <img class="is-unselectable radius-cut" src="images/hero2.0.jpg" alt="Cityscape">
                         </figure>
                     </div>
                 </div>
             </div>
         </div>
         <div class="has-text-centered is-size-5">
-            <a class="slide-up-down" href="#about"><i class="fa-solid fa-angle-down"></i></a>
+            <a class="slide-up-down" href="#services"><i class="fa-solid fa-angle-down"></i></a>
         </div>
     </section>
 
-    <!-- ....................About US....................... -->
+    <!-- Dialog Structure -->
+    <div id="service-dialog" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content box">
+            <button class="modal-close is-large" aria-label="close"></button>
+            <div class="content">
+                <h1 class="is-size-4" id="dialog-title"></h1>
+                <p id="dialog-content"></p>
+            </div>
+        </div>
+    </div>
 
-    <div id="about" class="has-text-centered pt-6">
-        <h1 class="title is-3 custom-color">About BlueMark.</h1>
+
+    <!-- Services Section -->
+    <div id="services" class="has-text-centered pt-6">
+        <h1 class="title is-3 custom-color">Our Services</h1>
         <p class="subtitle is-6 pt-2">BlueMark Real Estates specializes in all types of properties across Dubai.</p>
     </div>
-    <!-- About Us Columns  -->
+    <!-- Services Columns -->
     <section class="section">
         <div class="container">
             <div class="columns">
-                <!-- First Column  -->
+                <!-- First Column -->
                 <div class="column">
-
                     <article class="media notification merina">
                         <figure class="media-left">
                             <span class="icon">
@@ -158,17 +198,36 @@
                                     BlueMark provides management services, In terms of advertising the property,
                                     selecting credible tenants, signing tenancy agreements, collecting rents and
                                     maintaining properties through in-house or outsourced maintenance teams, complying
-                                    with local rules and regulations, and reporting to Owners with regard to their
-                                    properties.
+                                    with local rules and regulations, and reporting to Owners about their .......
+                                    <button class="read-more-toggle" data-title="Property Management at BlueMark"
+                                        data-content="
+                                        BlueMark helps property owners manage their properties effectively. We offer a range of services to make things easier for owners. Here’s what we do: 
+                                        
+                                        1: Advertising the Property: We create ads to attract potential tenants who want to rent the property.
+                                        
+                                        2: Selecting Credible Tenants: We carefully check and select reliable tenants to ensure that the people renting the property are trustworthy.
+                                        
+                                        3: Signing Tenancy Agreements: We handle all the paperwork for rental agreements, making sure everything is legal and clear.
+                                        
+                                        4: Collecting Rents: We collect the rent payments from tenants on behalf of the property owners, ensuring that the process is smooth and timely.
+                                        
+                                        5: Maintaining Properties: We take care of the property by handling maintenance and repairs. We either use our in-house maintenance team or hire external professionals to do the job.
+                                        
+                                        6: Complying with Local Rules and Regulations: We make sure that the property management follows all local laws and regulations, so everything is done correctly.
+                                        
+                                        7: Reporting to Owners: We keep property owners informed about their properties by providing regular reports and updates.
+                                        
+                                        In short, we manage properties by advertising, selecting tenants, handling rental agreements, collecting rent, maintaining the property, ensuring compliance with laws, and reporting to owners. This helps property owners save time and reduce stress.">Read
+                                        More</button>
                                 </p>
+                                <a href="#contact"><button class="button button-custom is-rounded">Connect with
+                                        us</button></a>
                             </div>
                         </div>
                     </article>
-
                 </div>
-                <!-- Second Column  -->
+                <!-- Second Column -->
                 <div class="column">
-
                     <article class="media notification merina">
                         <figure class="media-left">
                             <span class="icon">
@@ -180,19 +239,45 @@
                                 <h1 class="is-size-5">Snagging & Handover</h1>
                                 <p class="is-size-6">
                                     At BlueMark. We help clients to take the handover of their new property from the
-                                    developer, even
-                                    if they are not in Dubai. We also provide snagging services before handover. A
-                                    detailed inspection, like electrical, water heating, ventilation, air conditioning,
-                                    fire safety, bathroom equipment, leakage, laundry room
-                                    systems, etc.
+                                    developer, even if they are not in Dubai. We also provide snagging services before
+                                    handover.
+                                    A detailed inspection, like electrical, water heating, ventilation, air
+                                    conditioning,
+                                    fire safety, bathroom equipment, leakage, laundry room systems, etc .......
+                                    <button class="read-more-toggle" data-title="Snagging & Handover at BlueMark"
+                                        data-content="BlueMark helps clients take possession of their new property from the developer, even if the clients are not physically present in Dubai. We offer two key services during this process: snagging and handover. Here’s what we do:
+
+                                        1: Snagging Services: Before the handover, we perform a thorough inspection of the property. This is called snagging. During this inspection, we check for any issues or defects that need to be fixed. We look at important things like:
+                                        
+                                         - Electrical systems to make sure everything is safe and working.
+                                        
+                                         - Water heating systems to ensure hot water is available.
+                                        
+                                         - Ventilation to confirm the property has good air circulation.
+                                        
+                                         - Air conditioning to check the cooling systems.
+                                        
+                                         - Fire safety measures to ensure the property is safe in case of a fire.
+                                        
+                                         - Bathroom equipment to make sure everything is installed correctly and working.
+                                        
+                                         - Checking for any leaks, which could cause damage over time.
+                                        
+                                         - Laundry room systems to ensure washing machines and dryers are functioning.
+                                        
+                                        2: Handover Services: Once the snagging is complete and any issues are addressed, we help our clients take possession of the property. We make sure the handover process is smooth and straightforward, even if the clients are not in Dubai. We handle all the necessary paperwork and ensure that everything is in order.
+                                        
+                                        In summary, BlueMark assists clients with taking over their new property from the developer by conducting a detailed inspection (snagging) to find and fix any issues, and then facilitating a smooth handover process. This ensures that the property is in top condition and ready for our clients to enjoy.">Read
+                                        More</button>
                                 </p>
+                                <a href="#contact"><button class="button button-custom is-rounded">Connect with
+                                        us</button></a>
                             </div>
                         </div>
                     </article>
                 </div>
-                <!-- Third Column  -->
+                <!-- Third Column -->
                 <div class="column">
-
                     <article class="media notification merina">
                         <figure class="media-left">
                             <span class="icon">
@@ -206,169 +291,1052 @@
                                     BlueMark offers the owners unparalleled customer service, whether selling or
                                     leasing. A dedicated executive will assist you throughout the process while offering
                                     you all the benefits of our leasing, selling, and management services. We will find
-                                    quality tenants for you, on short or long- term rentals, to ensure the maximum.
+                                    quality tenants for you, on a short or long- term rentals .......
+                                    <button class="read-more-toggle" data-title="Selling & Leasing at BlueMark"
+                                        data-content="BlueMark provides outstanding customer service to property owners, whether they are selling or leasing their properties. Here’s how we make it easy for you:
+
+                                        1: Dedicated Executive: A dedicated executive from our team will be with you every step of the way. This person will guide and assist you throughout the entire process, making everything clear and straightforward.
+                                        
+                                        2: Leasing Services: If you want to lease your property, we will help you find quality tenants. Whether you prefer short-term or long-term rentals, we ensure that you get tenants who will take good care of your property.
+                                        
+                                        3: Selling Services: If you want to sell your property, we will manage everything to make the sale as smooth as possible. We’ll handle all the details to make sure you get the best deal.
+                                        
+                                        4: Management Services: Besides selling and leasing, we offer comprehensive property management services. We take care of everything, from maintenance to tenant relations, ensuring that your property remains in excellent condition.
+                                        
+                                        5: Maximizing Returns: Our goal is to help you get the maximum returns on your investment. Whether you are leasing or selling, we strive to achieve the best possible outcome for you.
+                                        
+                                        In summary, BlueMark offers unparalleled customer service by providing dedicated support, finding quality tenants for leasing, handling the selling process, managing properties, and ensuring maximum returns on your investment. We make the entire process easy and hassle-free for property owners.">Read
+                                        More</button>
                                 </p>
+                                <a href="#contact"><button class="button button-custom is-rounded">Connect with
+                                        us</button></a>
                             </div>
                         </div>
                     </article>
-
                 </div>
-
             </div>
         </div>
     </section>
     <div class="has-text-centered pb-6">
         <p class="subtitle is-6 pt-2">These are the services provided by Blue Mark Real Estate.</p>
     </div>
+    <hr>
 
-    <!-- ....................Services Section....................... -->
+    <!------------------------- Properties Section ---------------------->
 
-    <section id="services" class="is-large-with-navbar full-bg-color is-hidden-mobile pb-6 pt-6">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-vcentered">
-                    <!-- Image Content  -->
-                    <div class="column">
-                        <figure class="image is-3by2">
-                            <img class="radius-cut" src="images/service-img.png" alt="Cityscape">
-                        </figure>
-                    </div>
-                    <!-- Text Content  -->
-                    <div class="column pl-6">
-                        <h1 class="title custom-color custom-lineheight">
-                            What we do?
-                        </h1>
-                        <h2 class="subtitle is-6 pt-3">
-                            Services offered by BlueMark. are given below:
-                        </h2>
-                        <!-- Services with Tick Icon  -->
-                        <div style="color: black;">
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Buying</span></span>
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Selling</span></span>
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Leasing</span></span>
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Property Management</span></span>
-                            <div class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Mortgages</span></div>
+    <div class="container" id="properties">
+        <section class="section">
+            <h1 class="title has-text-centered custom-color pb-4">Properties</h1>
+            <p class="subtitle is-6 pt-2 has-text-centered">Explore a Variety of Properties from BlueMark Real Estate.</p>
+
+            <!-- Categories -->
+            <div class="tabs is-centered is-boxed">
+                <ul>
+                    <li class="category-button is-active" data-category="renting"><a>Renting</a></li>
+                    <li class="category-button" data-category="selling"><a>Selling</a></li>
+                    <li class="category-button" data-category="off-plan"><a>Off Plan</a></li>
+                </ul>
+            </div>
+
+            <!-- Property Cards -->
+            <div class="property-cards-container">
+                <!-- Renting Category -->
+                <div class="property-cards is-visible" id="renting">
+                    <!-- Property Card -->
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property1-images">
+                            <button class="scroll-btn left-btn" data-target="property1-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="property1-1.jpg" alt="Property Image">
+                            <img src="property1-2.jpg" alt="Property Image">
+                            <img src="property1-3.jpg" alt="Property Image">
+                            <img src="property1-4.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property1-images"
+                                data-direction="1">&#9654;</button>
                         </div>
+                        <p>Rent: 💲 Price: $XXX</p>
+                        <p>📐 Size: XXX sq.ft</p>
+                        <p>📍 Location: Location Name</p>
+                        <p>✔ Features: What they contain</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property1-images">
+                            <button class="scroll-btn left-btn" data-target="property1-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr1-view.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property1-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Jumeirah Beach Residence</p>
+                        <p><strong>Building:</strong> Murjan 1</p>
+                        <p><strong>Bedrooms:</strong> 3</p>
+                        <p><strong>Size:</strong> 1922 sqft</p>
+                        <p><strong>Furnishing:</strong> Fully Furnished</p>
+                        <p><strong>View:</strong> Community View</p>
+                        <p><strong>Rent:</strong> 260k AED</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property1-images">
+                            <button class="scroll-btn left-btn" data-target="property1-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-room.jpg" alt="Property Image">
+                            <img src="images/renting-pr3-view.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property1-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Dubai Marina</p>
+                        <p><strong>Building:</strong> Marina Crown</p>
+                        <p><strong>Bedrooms:</strong> 2</p>
+                        <p><strong>Size:</strong> 1714 sqft</p>
+                        <p><strong>Furnishing:</strong> Unfurnished</p>
+                        <p><strong>View:</strong> Sea View</p>
+                        <p><strong>Rent:</strong> 160k AED</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property1-images">
+                            <button class="scroll-btn left-btn" data-target="property1-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-kitchen.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr2-washroom.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property1-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Dubai Marina</p>
+                        <p><strong>Building:</strong> Marina Pinnacle</p>
+                        <p><strong>Bedrooms:</strong> 2</p>
+                        <p><strong>Size:</strong> 1219 sqft</p>
+                        <p><strong>Furnishing:</strong> Unfurnished</p>
+                        <p><strong>View:</strong> Sheikh Zayad Road View</p>
+                        <p><strong>Rent:</strong> 113k AED</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property2-images">
+                            <button class="scroll-btn left-btn" data-target="property2-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-bedroom.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-kitche.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-hall.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-dining.jpg" alt="Property Image">
+                            <img src="images/renting-pr4-view.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property2-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Dubai Marina</p>
+                        <p><strong>Building:</strong> Bay Central</p>
+                        <p><strong>Bedrooms:</strong> 1</p>
+                        <p><strong>Size:</strong> 705 sqft</p>
+                        <p><strong>Furnishing:</strong> Fully Furnished</p>
+                        <p><strong>View:</strong> Marina View</p>
+                        <p><strong>Rent:</strong> 130k AED</p>
+                    </div>
+                </div>
+
+                <!-- Selling Category -->
+                <div class="property-cards" id="selling">
+                    <!-- Property Card -->
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property6-images">
+                            <button class="scroll-btn left-btn" data-target="property6-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="property6-1.jpg" alt="Property Image">
+                            <img src="property6-2.jpg" alt="Property Image">
+                            <img src="property6-3.jpg" alt="Property Image">
+                            <img src="property6-4.jpg" alt="Property Image">
+                            <img src="property6-4.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property6-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p>Sell: 💲 Price: $XXX</p>
+                        <p>📐 Size: XXX sq.ft</p>
+                        <p>📍 Location: Location Name</p>
+                        <p>✔ Features: What they contain</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property6-images">
+                            <button class="scroll-btn left-btn" data-target="property6-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-outside.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-kitchen.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-washroom.jpg" alt="Property Image">
+                            <img src="images/selling-pr1-starecase.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property6-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Damaic Hills</p>
+                        <p><strong>Cluster:</strong> Park Residences 4</p>
+                        <p><strong>Bedrooms:</strong> 4</p>
+                        <p><strong>Size:</strong> 2265 sq.ft</p>
+                        <p><strong>Furnishing: Unfurnished</strong> </p>
+                        <p><strong>Price:</strong> 4.7M AED</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property6-images">
+                            <button class="scroll-btn left-btn" data-target="property6-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-instr.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-map.jpg" alt="Property Image">
+                            <img src="images/selling-pr2-payment.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property6-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Damaic Hills</p>
+                        <p><strong>Cluster:</strong> Park Residences 1</p>
+                        <p><strong>Bedrooms:</strong> 4</p>
+                        <p><strong>Size:</strong> 1914 sq.ft</p>
+                        <p><strong>Furnishing: Unfurnished</strong> </p>
+                        <p><strong>Price:</strong> 3.25M AED</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property6-images">
+                            <button class="scroll-btn left-btn" data-target="property6-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-hall.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m1.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-m3.jpg" alt="Property Image">
+                            <img src="images/selling-pr3-view.jpg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property6-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Business Bay</p>
+                        <p><strong>Building:</strong> Reva Residences</p>
+                        <p><strong>Bedrooms:</strong> 2</p>
+                        <p><strong>Size:</strong> 908 sq.ft</p>
+                        <p><strong>Furnishing: Unfurnished</strong> </p>
+                        <p><strong>Price:</strong> 4.7M AED</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property7-images">
+                            <button class="scroll-btn left-btn" data-target="property7-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/selling-pr4-hall.jpeg" alt="Property Image">
+                            <img src="images/selling-pr4-bedroom.jpeg" alt="Property Image">
+                            <img src="images/selling-pr4-dining.jpeg" alt="Property Image">
+                            <img src="images/selling-pr4-gallery.jpeg" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property7-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> JLT</p>
+                        <p><strong>Building:</strong> Al Shera</p>
+                        <p><strong>Bedrooms:</strong> 1</p>
+                        <p><strong>Size:</strong> 994 sq.ft</p>
+                        <p><strong>Furnishing: Fully Furnished</strong> </p>
+                        <p><strong>Price:</strong> 1.85M</p>
+                    </div>
+                </div>
+
+                <!-- Off Plan Category -->
+                <div class="property-cards" id="off-plan">
+                    <!-- Property Card -->
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property11-images">
+                            <button class="scroll-btn left-btn" data-target="property11-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/001OffPlan-Pr1.png" alt="Property Image">
+                            <img src="images/002OffPlan-Pr1.png" alt="Property Image">
+                            <img src="images/003OffPlan-Pr1.png" alt="Property Image">
+                            <img src="images/004OffPlan-Pr1.png" alt="Property Image">
+                            <img src="images/005OffPlan-Pr1.png" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property11-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Al Khalil Road</p>
+                        <p><strong>Developer:</strong> Samana</p>
+                        <p><strong>Project:</strong> Barari View</p>
+                        <p><strong>Bedrooms:</strong> 1,2 and 3</p>
+                        <p><strong>Starting from:</strong> 850K AED</p>
+                        <p><strong>Payment Plan:</strong> 70/30</p>
+                    </div>
+                    <div class="property-card">
+                        <div class="scrollable-images" id="property12-images">
+                            <button class="scroll-btn left-btn" data-target="property12-images"
+                                data-direction="-1">&#9664;</button>
+                            <img src="images/Offplan-Pr2001.png" alt="Property Image">
+                            <img src="images/Offplan-Pr2002.png" alt="Property Image">
+                            <img src="images/Offplan-Pr2003.png" alt="Property Image">
+                            <img src="images/Offplan-Pr2004.png" alt="Property Image">
+                            <img src="images/Offplan-Pr2005.png" alt="Property Image">
+                            <button class="scroll-btn right-btn" data-target="property12-images"
+                                data-direction="1">&#9654;</button>
+                        </div>
+                        <p><strong>Area:</strong> Lake Side</p>
+                        <p><strong>Developer:</strong> Samana</p>
+                        <p><strong>Project:</strong> Lake Views</p>
+                        <p><strong>Bedrooms:</strong> Studio, 1 and 2</p>
+                        <p><strong>Starting from:</strong> 850K AED</p>
+                        <p><strong>Payment Plan:</strong> 70/30</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- ....................Services Section for Mobile....................... -->
-
-    <section id="services"
-        class="hero is-large-with-navbar full-bg-color is-hidden-widescreen-only is-hidden-desktop-only is-hidden-tablet-only has-text-centered pb-6 pt-6">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns">
-                    <!-- Image Content  -->
-                    <div class="column">
-                        <figure class="image is-3by2">
-                            <img class="radius-cut" src="images/service-img.png" alt="Cityscape">
-                        </figure>
-                    </div>
-                    <!-- Text Content  -->
-                    <div class="column pl-6">
-                        <h1 class="title custom-color custom-lineheight">
-                            What we do?
-                        </h1>
-                        <h2 class="subtitle is-6 pt-3">
-                            Services offered by BlueMark:
-                        </h2>
-                        <!-- Services with Tick Icon  -->
-                        <div style="color: black;">
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Buying</span></span>
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Selling</span></span>
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Leasing</span></span>
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Property Management</span></span>
-                            <span class="p-3"><img src="images/tick.png" alt="Tick | Checked Box"><span
-                                    class="is-size-6"> Mortgages</span></span>
-                        </div>
-                    </div>
-                </div>
+            <!-- Navigation Dots -->
+            <div class="navigation-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
             </div>
-        </div>
-    </section>
-
-    <!-- ....................Testimonials....................... -->
-    <div id="testimonials" class="has-text-centered pt-6">
-        <h1 class="title is-3 custom-color">Testimonials</h1>
-        <p class="subtitle is-6 pt-2">Here's What Our Happy Customers Have to Say About Us!</p>
+        </section>
     </div>
-    <!-- Reviews Columns  -->
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <!-- First Column  -->
-                <div class="column">
 
-                    <article class="media notification merina">
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="is-size-6">
-                                    I had an exceptional experience with BlueMark Real Estate. They helped me find my
-                                    dream home in Dubai with ease and professionalism. Their team was incredibly
-                                    knowledgeable and patient, answering all my questions and guiding me through the
-                                    entire process. I highly recommend BlueMark Real Estate for anyone looking to buy or
-                                    sell property in Dubai!
-                                </p>
-                                <h1 class="is-size-6 has-text-right">Sarah Ahmed</h1>
-                            </div>
-                        </div>
-                    </article>
 
-                </div>
-                <!-- Second Column  -->
-                <div class="column">
+    <!-- Contact Section For Desktop-->
+    <section id="contact" class="unique-merina is-hidden-mobile">
+        <div class="unique-container">
+            <h1 class="title has-text-centered unique-contact-heading custom-color">Contact Us</h1>
 
-                    <article class="media notification merina">
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="is-size-6">
-                                    BlueMark Real Estate is the best in the business! They handled the sale of my
-                                    apartment with great expertise and efficiency. Their marketing strategy was
-                                    top-notch, and they kept me informed every step of the way. I was thrilled with the
-                                    quick sale and excellent price they secured. If you're looking for reliable real
-                                    estate services, BlueMark is the way to go.
-                                </p>
-                                <h1 class="is-size-6 has-text-right">Omar Khalid</h1>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- Third Column  -->
-                <div class="column">
-
-                    <article class="media notification merina">
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="is-size-6">
-                                    BlueMark Real Estate exceeded my expectations in every way. Their team is
-                                    professional, friendly, and truly cares about their clients. They took the time to
-                                    understand my needs and preferences, and found me a fantastic property that fits
-                                    perfectly. I couldn't be happier with my experience and the level of service
-                                    provided by BlueMark Real Estate Company.
-                                </p>
-                                <h1 class="is-size-6 has-text-right">Rashid Al-Fahim</h1>
-                            </div>
-                        </div>
-                    </article>
-
+            <div class="columns is-centered">
+                <!-- Contact Details -->
+                <div class="column unique-container2 is-one-third has-text-centered">
+                    <h2 class="subtitle is-4 has-text-weight-semibold">Our Office</h2>
+                    <p><strong>Address:</strong> 1234 BlueMark Street,</p>
+                    <p>Dubai, UAE</p>
+                    <p><strong>Phone:</strong> <a href="tel:+971123456789">+971 123 456 789</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@bluemark.com">info@bluemark.com</a></p>
+                    <div class="unique-social-icons mt-4">
+                        <a href="https://instagram.com/bluemark_dubai" target="_blank" class="icon has-text-info"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/bluemark_dubai" target="_blank" class="icon has-text-info"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/bluemark_dubai" target="_blank" class="icon has-text-info"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/bluemark_dubai" target="_blank" class="icon has-text-info"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                    <figure class="image is-3by2 is-hidden-tablet-only">
+                        <img class="pt-4 radius-cut-special" src="images/service-img.png" alt="Cityscape Image">
+                    </figure>
                 </div>
 
+                <!-- Inquiry Form For Desktops -->
+                <div class="column is-two-thirds box unique-background-light is-hidden-mobile mb-0 ml-4">
+                    <p class=" unique-contact-subheading">Fill out this inquiry form and we'll reach out to you!</p>
+                    <form id="unique-contactForm" action="contact.php" method="POST">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" name="name" id="unique-name" placeholder="Your Name"
+                                    >
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" name="email" id="unique-email"
+                                    placeholder="Your Email">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" name="message" id="unique-message" placeholder="Your Message"
+                                    ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link is-fullwidth" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                        <p class="unique-error-message has-text-centered" id="unique-error-message"
+                            style="display: none;">All fields are required. Please fill in the missing information.</p>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact Section For Mobile -->
+    <section id="contact" class="unique-merina is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen-only">
+        <div class="unique-container-2">
+            <h1 class="title has-text-centered unique-contact-heading custom-color">Contact Us</h1>
+
+            <div class="columns is-centered">
+                <!-- Contact Details -->
+                <div class="column unique-container2 is-one-third has-text-centered">
+                    <h2 class="subtitle is-4 has-text-weight-semibold">Our Office</h2>
+                    <p><strong>Address:</strong> 1234 BlueMark Street,</p>
+                    <p>Dubai, UAE</p>
+                    <p><strong>Phone:</strong> <a href="tel:+971123456789">+971 123 456 789</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@bluemark.com">info@bluemark.com</a></p>
+                    <div class="unique-social-icons mt-4">
+                        <a href="https://instagram.com/bluemark_dubai" target="_blank" class="icon has-text-info"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/bluemark_dubai" target="_blank" class="icon has-text-info"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/bluemark_dubai" target="_blank" class="icon has-text-info"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/bluemark_dubai" target="_blank" class="icon has-text-info"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                    <figure class="image is-3by2 is-hidden-tablet-only">
+                        <img class="pt-4 radius-cut-special" src="images/service-img.png" alt="Cityscape Image">
+                    </figure>
+                </div>
+
+                <!-- Inquiry Form for Mobile-->
+                <div
+                    class="column is-two-thirds box unique-background-light is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen-only mt-4">
+                    <p class=" unique-contact-subheading">Fill out this inquiry form and we'll reach out to you!</p>
+                    <form id="unique-contactForm" action="contact.php" method="POST">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" name="name" id="unique-name" placeholder="Your Name"
+                                    required>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" name="email" id="unique-email"
+                                    placeholder="Your Email" required>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" name="message" id="unique-message" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link is-fullwidth" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                        <p class="unique-error-message has-text-centered" id="unique-error-message"
+                            style="display: none;">All fields are required. Please fill in the missing information.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for form validation -->
+    <script>
+        document.getElementById('unique-contactForm').addEventListener('submit', function (event) {
+            const name = document.getElementById('unique-name').value.trim();
+            const email = document.getElementById('unique-email').value.trim();
+            const message = document.getElementById('unique-message').value.trim();
+            const errorMessage = document.getElementById('unique-error-message');
+
+            if (!name || !email || !message) {
+                event.preventDefault();
+                errorMessage.style.display = 'block';
+            } else {
+                errorMessage.style.display = 'none';
+            }
+        });
+    </script>
+
 
     <!-- ....................Footer Section....................... -->
 
@@ -388,23 +1356,29 @@
                     <p class="title is-6">Important Links</p>
                     <ul class="hovering-buddy">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#testimonials">Reveiws</a></li>
-                        <li><a href="/contact.html">Contact Us</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/contact.html">Get in touch</a></li>
                     </ul>
                 </div>
                 <!-- Column 3: Social Profiles -->
                 <div class="column">
                     <p class="title is-6">Follow Us</p>
                     <div class="social-icons">
-                        <a target="_blank" href="https://instagram.com/bluemark_dubai"><img src="images/fb-logo.svg" alt="Facebook Icon"></a>
-                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/ig-logo.png" alt="Instagram Icon"></a>
-                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/li-logo.svg" alt="Linkedin Icon"></a>
-                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/x-logo.svg" alt="X formerly Twitter Icon"></a>
-                        <a target="_blank" href="https://www.bluemarkae.com"><img src="images/globe.svg" alt="Globe Icon | Website Icon"></a>
+                        <a target="_blank" href="https://instagram.com/bluemark_dubai"><img src="images/fb-logo.svg"
+                                alt="Facebook Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/ig-logo.png"
+                                alt="Instagram Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/li-logo.svg"
+                                alt="Linkedin Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/x-logo.svg"
+                                alt="X formerly Twitter Icon"></a>
+                        <a target="_blank" href="https://www.bluemarkae.com"><img src="images/globe.svg"
+                                alt="Globe Icon | Website Icon"></a>
                     </div>
-                    <p class="para-special">Stay connected with us on social media so you never miss out on any opportunity!</p>
+                    <p class="para-special">Stay connected with us on social media so you never miss out on any
+                        opportunity!</p>
                 </div>
                 <!-- Column 4: Newsletter -->
                 <div class="column">
@@ -420,7 +1394,8 @@
                                 <button type="submit" class="button is-link is-fullwidth">Subscribe</button>
                             </div>
                         </div>
-                        <p class="error-message" id="error-message">Please enter your email before clicking on subscribe.</p>
+                        <p class="error-message" id="error-message">Please enter your email before clicking on
+                            subscribe.</p>
                     </form>
                 </div>
             </div>
@@ -434,7 +1409,8 @@
 
     <!-- ....................Footer Section For Mobile....................... -->
 
-    <footer class="section muted-blue is-hidden-widescreen-only is-hidden-desktop-only is-hidden-tablet-only has-text-centered">
+    <footer
+        class="section muted-blue is-hidden-widescreen-only is-hidden-desktop-only is-hidden-tablet-only has-text-centered">
         <div class="container">
             <div class="columns">
                 <!-- Column 1: Logo & Subheading -->
@@ -451,10 +1427,9 @@
                     <p class="title is-6">Important Links</p>
                     <ul class="hovering-buddy is-flex is-justify-content-center">
                         <li><a href="#home">Home</a></li>
-                        <li><a class="pl-3" href="#about">About</a></li>
                         <li><a class="pl-3" href="#services">Services</a></li>
-                        <li><a class="pl-3" href="#testimonials">Reveiws</a></li>
-                        <li><a class="pl-3" href="/contact.html">Contact Us</a></li>
+                        <li><a class="pl-3" href="#properties">Properties</a></li>
+                        <li><a class="pl-3" href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <hr>
@@ -462,13 +1437,19 @@
                 <div class="column">
                     <p class="title is-6">Follow Us</p>
                     <div class="social-icons">
-                        <a target="_blank" href="https://instagram.com/bluemark_dubai"><img src="images/fb-logo.svg" alt="Facebook Icon"></a>
-                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/ig-logo.png" alt="Instagram Icon"></a>
-                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/li-logo.svg" alt="Linkedin Icon"></a>
-                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/x-logo.svg" alt="X formerly Twitter Icon"></a>
-                        <a target="_blank" href="https://www.bluemarkae.com"><img src="images/globe.svg" alt="Globe Icon | Website Icon"></a>
+                        <a target="_blank" href="https://instagram.com/bluemark_dubai"><img src="images/fb-logo.svg"
+                                alt="Facebook Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/ig-logo.png"
+                                alt="Instagram Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/li-logo.svg"
+                                alt="Linkedin Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="images/x-logo.svg"
+                                alt="X formerly Twitter Icon"></a>
+                        <a target="_blank" href="https://www.bluemarkae.com"><img src="images/globe.svg"
+                                alt="Globe Icon | Website Icon"></a>
                     </div>
-                    <p class="para-special">Stay connected with us on social media so you never miss out on any opportunity!</p>
+                    <p class="para-special">Stay connected with us on social media so you never miss out on any
+                        opportunity!</p>
                 </div>
                 <hr>
                 <!-- Column 4: Newsletter -->
@@ -477,7 +1458,7 @@
                     <form id="newsletterForm" action="news.php" method="POST">
                         <div class="field">
                             <div class="control">
-                                <input class="input" type="email" name="email" id="email" placeholder="Your email">
+                                <input class="input" type="email" name="email" id="email" placeholder="Your email"required >
                             </div>
                         </div>
                         <div class="field">
@@ -485,7 +1466,8 @@
                                 <button type="submit" class="button is-link is-fullwidth">Subscribe</button>
                             </div>
                         </div>
-                        <p class="error-message" id="error-message">Please enter your email before clicking on subscribe.</p>
+                        <p class="error-message" id="error-message">Please enter your email before clicking on
+                            subscribe.</p>
                     </form>
                 </div>
             </div>
@@ -499,7 +1481,7 @@
     <button id="toTopBtn" class="to-top-button">
         &uarr;
     </button>
-    
+
 
     <script src="main.js"></script>
 </body>
