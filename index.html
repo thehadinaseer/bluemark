@@ -32,7 +32,7 @@
             text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.993);
         }
 
-        .shadow-black{
+        .shadow-black {
             text-shadow: 2px 2px 4px rgba(19, 73, 250, 0.993);
         }
 
@@ -49,6 +49,13 @@
             background-color: rgba(0, 0, 0, 0.2);
             /* Change this value to adjust transparency */
             z-index: 1;
+        }
+
+        .hero-button {
+            position: relative;
+            /* or absolute, depending on your layout */
+            z-index: 2;
+            /* Ensure this is higher than .hero-overlay's z-index */
         }
     </style>
 </head>
@@ -109,7 +116,7 @@
                             Mortgages</span></div>
                 </div>
                 <div>
-                    <a href="#contact" class="button is-link mt-5">
+                    <a href="#contact" class="hero-button button is-link mt-5">
                         Get in touch
                     </a>
                 </div>
@@ -149,7 +156,7 @@
                             Mortgages</span></span>
                 </div>
                 <div>
-                    <a href="#contact" class="button is-link mt-5">
+                    <a href="#contact" class=" hero-button button is-link mt-5">
                         Get in touch
                     </a>
                 </div>
