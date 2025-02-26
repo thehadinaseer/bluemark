@@ -350,3 +350,9 @@ html {
     right: 0;
 }
 
+/* Image Custom  */
+.cutomizing-image{
+    margin-top: 20px;
+    outline: 2px solid grey;
+    padding: 2px;
+}

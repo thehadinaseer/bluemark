@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// This code will reload the page every 1 minute (60000 milliseconds)
-setTimeout(function(){
+// To Refresh 
+setTimeout(function () {
     location.reload();
 }, 60000);
