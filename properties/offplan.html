@@ -1,11 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Off Plan Properties in Dubai | Blue Mark Real Estate</title> <!-- Updated Title -->
+    <meta name="description"
+        content="Discover exclusive off-plan properties in Dubai with Blue Mark Real Estate.  Invest in the future with our curated selection of pre-construction projects.">
+    <meta name="keywords"
+        content="off plan properties Dubai, Dubai off plan, Blue Mark Real Estate, pre-construction Dubai, new developments Dubai, invest Dubai real estate">
+    <meta name="robots" content="index, follow">
+    <!-- Author -->
+    <meta name="author" content="Hadi Naseer, Blue Mark Real Estate | bluemarkae.com">
+    <!--/ Author -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.css">
+    <link rel="stylesheet" href="/style.css">
+    <!-- OG Meta Tags -->
+    <meta property="og:title" content="Off Plan Properties in Dubai | Blue Mark Real Estate"> <!-- Updated OG Title -->
+    <meta property="og:description"
+        content="Discover exclusive off-plan properties in Dubai with Blue Mark Real Estate.  Invest in the future with our curated selection of pre-construction projects.">
+    <meta property="og:image" content="/images/offplan-preview.jpeg"> <!--  Use a relevant preview image -->
+    <meta property="og:url" content="https://bluemarkae.com/properties/offplan.html"> <!-- Updated URL -->
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/BM.png">
+    <!-- Apple Touch Icon (For iOS Devices) -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <script src="https://kit.fontawesome.com/9cba8e96cc.js" crossorigin="anonymous"></script>
+    <style>
+        .custom-shadow {
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.993);
+        }
+
+        .shadow-black {
+            text-shadow: 2px 2px 4px rgba(19, 73, 250, 0.993);
+        }
+
+        .custom-color-white {
+            color: white;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            /* Change this value to adjust transparency */
+            z-index: 1;
+        }
+
+        .hero-button {
+            position: relative;
+            /* or absolute, depending on your layout */
+            z-index: 2;
+            /* Ensure this is higher than .hero-overlay's z-index */
+        }
+
+        .carousel {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-nav button {
+            font-size: 40px;
+            color: white;
+            background: none;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel-nav button:hover {
+            transition: 0.4s;
+            margin: -4px;
+        }
+
+        .hasimage.has-3by2 {
+            aspect-ratio: 3/2;
+        }
+
+        .hasimage.hasis-3by2 img,
+        .hasimage.hasis-3by2 .has-ratio {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Offplan</h1>
+
+    <!-- ....................Navigation Menu....................... -->
+
+    <nav class="navbar is-transparent has-text-centered has-text-weight-semibold" role="navigation"
+        aria-label="main navigation">
+        <div class="navbar-brand pr-6 pl-2">
+            <a class="navbar-item" href="/">
+                <img src="/images/logo.png" alt="Blue Mark Real Estate Logo">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start is-size-6">
+                <a class="navbar-item pl-5" href="/">Home</a>
+                <a class="navbar-item pl-5" href="/properties/renting.html">Renting</a>
+                <a class="navbar-item pl-5" href="/properties/selling.html">Selling</a>
+                <a class="navbar-item pl-5 custom-color is-underlined" href="/properties/offplan.html">Off Plan</a>
+                <a href="/contact.html"><button
+                        class="button is-rounded button-custom is-hidden-desktop-only is-hidden-widescreen-only is-hidden-fullhd">Get
+                        in touch</button></a>
+            </div>
+
+            <div class="navbar-item navbar-end pr-6 has-text-centered is-hidden-mobile is-hidden-tablet-only">
+                <div class="buttons">
+                    <a href="/contact.html"><button class="button is-rounded button-custom">Get in touch</button></a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ....................Hero Section....................... -->
+
+    <section id="home" class="hero is-hidden-mobile is-fullheight-with-navbar pb-3"
+        style="background-image: url('/images/offplan-hero.webp'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 hero-button custom-shadow custom-color custom-lineheight">
+                    Invest in Dubai's Future: Off-Plan Properties
+                </h1>
+                <h2 class="subtitle hero-button shadow-black pt-3 custom-color-white">
+                    Explore exclusive pre-construction opportunities and secure your investment in Dubai's growing real
+                    estate market. Early-bird pricing and flexible payment plans available.
+                </h2>
+                <div>
+                    <a href="#more" class="hero-button button is-link">
+                        View All Properties
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered is-size-5">
+            <a class="slide-up-down hero-button" href="#more"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+    </section>
+
+
+    <!-- ....................Hero Section for Mobile....................... -->
+
+    <section id="home"
+        class="hero is-fullheight-with-navbar pb-3 is-hidden-widescreen-only is-hidden-desktop-only is-hidden-tablet-only is-hidden-fullhd"
+        style="background-image: url('/images/offplan-hero.webp'); background-size: cover; background-position: center;">
+        <div class="hero-overlay"></div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title hero-button custom-shadow custom-color custom-lineheight">
+                    Invest in Dubai's Future: Off-Plan Properties
+                </h1>
+                <h2 class="subtitle hero-button shadow-black pt-3 custom-color-white">
+                    Explore exclusive pre-construction opportunities and secure your investment in Dubai's growing real
+                    estate market. Early-bird pricing and flexible payment plans available.
+                </h2>
+                <div>
+                    <a href="#more" class="hero-button button is-link mt-5">
+                        View All Properties
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered is-size-5">
+            <a class="slide-up-down hero-button" href="#more"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ....................Properties Listing Section....................... -->
+
+    <section class="section">
+        <div class="container" id="more">
+            <div class="columns">
+                <div class="column is-6">
+                    <h1 class="title mt-6">Off-Plan Property for Sale in Dubai</h1>
+                    <h2 class="subtitle mt-2 is-6">Discover latest pre-construction projects and investment
+                        opportunities.</h2>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <!--  PROPERTY CARD 1 -->
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image carousel">
+                            <figure class="carousel-inner hasimage has-3by2">
+                                <img class="carousel-item" src="/images/001OffPlan-Pr1.png" alt="Property Image">
+                                <img class="carousel-item" src="/images/002OffPlan-Pr1.png" alt="Property Image">
+                                <img class="carousel-item" src="/images/003OffPlan-Pr1.png" alt="Property Image">
+                                <img class="carousel-item" src="/images/004OffPlan-Pr1.png" alt="Property Image">
+                                <img class="carousel-item" src="/images/005OffPlan-Pr1.png" alt="Property Image">
+                            </figure>
+                            <div class="carousel-nav">
+                                <button class="prev">‹</button>
+                                <button class="next">›</button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-5">Luxury Apartments in Barari View</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <p><strong>Area:</strong> Al Khalil Road</p>
+                                </div>
+                                <div>
+                                    <p><strong>Developer:</strong> Samana</p>
+                                </div>
+                                <div>
+                                    <p><strong>Project:</strong> Barari View</p>
+                                </div>
+                                <div>
+                                    <p><strong>Bedrooms:</strong> 1,2 and 3</p>
+                                </div>
+                                <div>
+                                    <p><strong>Starting from:</strong> 850K AED</p>
+                                </div>
+                                <div>
+                                    <p><strong>Payment Plan:</strong> 70/30</p>
+                                </div>
+                                <div class="buttons mt-4">
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='tel:+97145579381'">
+                                        <i class="fas fa-phone"></i>   Call
+                                    </button>
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='mailto:connect@bluemarkae.com'">
+                                        <i class="fas fa-envelope"></i>   Email
+                                    </button>
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='https://wa.link/2ilt5n'">
+                                        <i class="fab fa-whatsapp"></i>   !
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /card 1 -->
+
+                <!--  PROPERTY CARD 2 -->
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image carousel">
+                            <figure class="carousel-inner hasimage has-3by2">
+                                <img class="carousel-item" src="/images/Offplan-Pr2001.png" alt="Property Image">
+                                <img class="carousel-item" src="/images/Offplan-Pr2002.png" alt="Property Image">
+                                <img class="carousel-item" src="/images/Offplan-Pr2003.png" alt="Property Image">
+                                <img class="carousel-item" src="/images/Offplan-Pr2004.png" alt="Property Image">
+                                <img class="carousel-item" src="/images/Offplan-Pr2005.png" alt="Property Image">
+                            </figure>
+                            <div class="carousel-nav">
+                                <button class="prev">‹</button>
+                                <button class="next">›</button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-5">Beachfront Villas in Lake Side</p> 
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <p><strong>Area:</strong> Lake Side</p>
+                                </div>
+                                <div>
+                                    <p><strong>Developer:</strong> Samana</p>
+                                </div>
+                                <div>
+                                    <p><strong>Project:</strong> Lake Views</p>
+                                </div>
+                                <div>
+                                    <p><strong>Bedrooms:</strong> Studio, 1 and 2</p>
+                                </div>
+                                <div>
+                                    <p><strong>Starting from:</strong> 850K AED</p>
+                                </div>
+                                <div>
+                                    <p><strong>Payment Plan:</strong> 70/30</p>
+                                </div>
+                                <div class="buttons mt-4">
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='tel:+97145579381'">
+                                        <i class="fas fa-phone"></i>   Call
+                                    </button>
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='mailto:connect@bluemarkae.com'">
+                                        <i class="fas fa-envelope"></i>   Email
+                                    </button>
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='https://wa.link/2ilt5n'">
+                                        <i class="fab fa-whatsapp"></i>   !
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /card 2 -->
+
+                <!--  PROPERTY CARD 3 -->
+                <!-- <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image carousel">
+                            <figure class="carousel-inner hasimage has-3by2">
+                                <img class="carousel-item" src="/images/offplan-pr3-render1.jpg"
+                                    alt="Property 3 Render">
+                                <img class="carousel-item" src="/images/offplan-pr3-render2.jpg"
+                                    alt="Property 3 Floorplan">
+                                <img class="carousel-item" src="/images/offplan-pr3-location.jpg"
+                                    alt="Property 3 Location Map">
+                                <img class="carousel-item" src="/images/offplan-pr3-paymentplan.jpg"
+                                    alt="Property 3 Payment Plan">
+
+                            </figure>
+                            <div class="carousel-nav">
+                                <button class="prev">‹</button>
+                                <button class="next">›</button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-5">Luxury Apartments in [Project Name]</p> 
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <p><strong>Area:</strong> [Area, e.g., Jumeirah Village Circle]</p>
+                                </div>
+                                <div>
+                                    <p><strong>Developer:</strong> [Developer Name]</p> 
+                                </div>
+                                <div>
+                                    <p><strong>Completion Date:</strong> [Expected Completion]</p>
+                                    
+                                </div>
+                                <div>
+                                    <p><strong>Bedrooms:</strong> Studios, 1 & 2 </p>
+                                </div>
+                                <div>
+                                    <p><strong>Starting Price:</strong> [Starting Price]</p> 
+                                </div>
+                                <div>
+                                    <p><strong>Payment Plan:</strong> [Payment Plan Summary]</p> 
+                                </div>
+                                <div class="buttons mt-4">
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='tel:+97145579381'">
+                                        <i class="fas fa-phone"></i>   Call
+                                    </button>
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='mailto:connect@bluemarkae.com'">
+                                        <i class="fas fa-envelope"></i>   Email
+                                    </button>
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='https://wa.link/2ilt5n'">
+                                        <i class="fab fa-whatsapp"></i>   !
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /card 3 -->
+
+                <!--  PROPERTY CARD 4 -->
+                <!-- <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image carousel">
+                            <figure class="carousel-inner hasimage has-3by2">
+
+                                <img class="carousel-item" src="/images/offplan-pr4-render1.jpg"
+                                    alt="Property 4 Render">
+                                <img class="carousel-item" src="/images/offplan-pr4-render2.jpg"
+                                    alt="Property 4 Floorplan">
+                                <img class="carousel-item" src="/images/offplan-pr4-location.jpg"
+                                    alt="Property 4 Location Map">
+                                <img class="carousel-item" src="/images/offplan-pr4-paymentplan.jpg"
+                                    alt="Property 4 Payment Plan">
+
+                            </figure>
+                            <div class="carousel-nav">
+                                <button class="prev">‹</button>
+                                <button class="next">›</button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-5">Townhouses in [Project Name]</p> 
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <p><strong>Area:</strong> [Area, e.g., Arabian Ranches III]</p>
+                                </div>
+                                <div>
+                                    <p><strong>Developer:</strong> [Developer Name]</p> 
+                                </div>
+                                <div>
+                                    <p><strong>Completion Date:</strong> [Expected Completion]</p>
+                                  
+                                </div>
+                                <div>
+                                    <p><strong>Bedrooms:</strong> 3 & 4 </p>
+                                </div>
+                                <div>
+                                    <p><strong>Starting Price:</strong> [Starting Price]</p> 
+                                </div>
+                                <div>
+                                    <p><strong>Payment Plan:</strong> [Payment Plan Summary]</p>
+                                </div>
+                                <div class="buttons mt-4">
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='tel:+97145579381'">
+                                        <i class="fas fa-phone"></i>   Call
+                                    </button>
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='mailto:connect@bluemarkae.com'">
+                                        <i class="fas fa-envelope"></i>   Email
+                                    </button>
+                                    <button class="button is-light custom-color"
+                                        onclick="window.location.href='https://wa.link/2ilt5n'">
+                                        <i class="fab fa-whatsapp"></i>   !
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /card 4 -->
+
+
+            </div> 
+        </div> 
+    </section>
+
+    <!-- ....................Footer Section....................... -->
+
+    <footer class="section muted-blue is-hidden-mobile">
+        <div class="container">
+            <div class="columns">
+                <!-- Column 1: Logo & Subheading -->
+                <div class="column">
+                    <figure>
+                        <a href="/"><img class="footer-logo-img" src="/images/logo.png" alt="Logo"></a>
+                        <p style="padding-left: 5px;" class="subtitle is-6">At BlueMark. Our Mission is to provide
+                            ultimate standard of service.</p>
+                    </figure>
+                </div>
+                <!-- Column 2: Important Links -->
+                <div class="column">
+                    <p class="title is-6">Important Links</p>
+                    <ul class="hovering-buddy">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/properties.html">Properties</a></li>
+                        <li><a href="/index.html#contact">Contact</a></li>
+                        <li><a href="/contact.html">Get in touch</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Social Profiles -->
+                <div class="column">
+                    <p class="title is-6">Follow Us</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://instagram.com/bluemark_dubai"><img src="/images/fb-logo.svg"
+                                alt="Facebook Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img
+                                src="/images/ig-logo.png" alt="Instagram Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img
+                                src="/images/li-logo.svg" alt="LinkedIn Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="/images/x-logo.svg"
+                                alt="X formerly Twitter Icon"></a>
+                        <a target="_blank" href="https://www.bluemarkae.com"><img src="/images/globe.svg"
+                                alt="Globe Icon | Website Icon"></a>
+                    </div>
+                    <p class="para-special">Stay connected with us on social media so you never miss out on any
+                        opportunity!</p>
+                </div>
+                <!-- Column 4: Newsletter -->
+                <div class="column">
+                    <p class="title is-6">Newsletter</p>
+                    <form id="newsletterForm" action="/news.php" method="POST">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="email" name="email" id="email" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit" class="button is-link is-fullwidth">Subscribe</button>
+                            </div>
+                        </div>
+                        <p class="error-message" id="error-message">Please enter your email before clicking on
+                            subscribe.</p>
+                    </form>
+                </div>
+            </div>
+            <!-- CopyRight Notice  -->
+            <div class="column">
+                <hr>
+                <p class="subtitle is-6">© 2025 BlueMark Real Estate. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ....................Footer Section For Mobile....................... -->
+
+    <footer
+        class="section muted-blue is-hidden-widescreen-only is-hidden-desktop-only is-hidden-tablet-only has-text-centered is-hidden-fullhd">
+        <div class="container">
+            <div class="columns">
+                <!-- Column 1: Logo & Subheading -->
+                <div class="column">
+                    <figure>
+                        <a href="/"><img class="footer-logo-img" src="/images/logo.png" alt="Logo"></a>
+                        <p style="padding-left: 5px;" class="subtitle is-6">At BlueMark. Our Mission is to provide
+                            ultimate standard of service.</p>
+                    </figure>
+                </div>
+                <hr>
+                <!-- Column 2: Important Links -->
+                <div class="column">
+                    <p class="title is-6">Important Links</p>
+                    <ul class="hovering-buddy is-flex is-justify-content-center">
+                        <li><a href="/">Home</a></li>
+                        <li class="pl-5"><a href="/services.html">Services</a></li>
+                        <li class="pl-5"><a href="/properties.html">Properties</a></li>
+                        <li class="pl-5"><a href="/index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <!-- Column 3: Social Profiles -->
+                <div class="column">
+                    <p class="title is-6">Follow Us</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://instagram.com/bluemark_dubai"><img src="/images/fb-logo.svg"
+                                alt="Facebook Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img
+                                src="/images/ig-logo.png" alt="Instagram Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img
+                                src="/images/li-logo.svg" alt="LinkedIn Icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/bluemark_dubai"><img src="/images/x-logo.svg"
+                                alt="X formerly Twitter Icon"></a>
+                        <a target="_blank" href="https://www.bluemarkae.com"><img src="/images/globe.svg"
+                                alt="Globe Icon | Website Icon"></a>
+                    </div>
+                    <p class="para-special">Stay connected with us on social media so you never miss out on any
+                        opportunity!</p>
+                </div>
+                <hr>
+                <!-- Column 4: Newsletter -->
+                <div class="column">
+                    <p class="title is-6">Newsletter</p>
+                    <form id="newsletterForm" action="/news.php" method="POST">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="email" name="email" id="email" placeholder="Your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit" class="button is-link is-fullwidth">Subscribe</button>
+                            </div>
+                        </div>
+                        <p class="error-message" id="error-message">Please enter your email before clicking on
+                            subscribe.</p>
+                    </form>
+                </div>
+            </div>
+            <!-- CopyRight Notice  -->
+            <div class="column">
+                <hr>
+                <p class="subtitle is-6">© 2025 BlueMark Real Estate. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="toTopBtn" class="to-top-button">
+        ↑
+    </button>
+
+    <!--  Carousel Script -->
+    <script>
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            const carouselInner = carousel.querySelector('.carousel-inner');
+            const carouselItems = carouselInner.querySelectorAll('.carousel-item');
+            const prevButton = carousel.querySelector('.prev');
+            const nextButton = carousel.querySelector('.next');
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                const offset = -currentIndex * 100 + "%";
+                carouselInner.style.transform = `translateX(${offset})`;
+            }
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
+                updateCarousel();
+            });
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
+                updateCarousel();
+            });
+        });
+    </script>
+
+    <script src="/main.js"></script>
 </body>
+
 </html>
