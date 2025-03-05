@@ -210,7 +210,8 @@ html {
 
 
 #contact .unique-container {
-    background: rgb(217, 444, 241);
+    /* background: rgb(217, 444, 241); */
+    background: rgb(249, 249, 253);
     border-radius: 8px;
     padding: 3rem 5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
