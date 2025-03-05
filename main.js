@@ -282,8 +282,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// To Refresh 
-setTimeout(function () {
-    location.reload();
-}, 90000);
 

@@ -14,6 +14,15 @@
 .navbar-item:focus {
     background-color: transparent !important;
     color: rgba(33, 92, 162, 255) !important;
+    text-decoration: underline !important;
+    transition: 0.3s !important;
+}
+
+.custom-hover:hover {
+    background-color: transparent !important;
+    color: rgba(33, 92, 162, 255) !important;
+    transition: 0.2s !important;
+    text-decoration: underline !important;
 }
 
 .button-custom {
@@ -78,8 +87,35 @@
 
 /* Changing About Column Background Color  */
 .merina {
-    background-color: aliceblue;
+    background-color: white;
+    box-shadow:
+        -2px 2px 5px rgba(33, 92, 162, 255),
+        /* Bottom-left */
+        2px 2px 5px rgba(33, 92, 162, 255),
+        /* Bottom-right */
+        -2px -2px 5px rgba(33, 92, 162, 255),
+        /* Top-left */
+        2px -2px 5px rgba(33, 92, 162, 255);
+    /* Top-right */
+    transition: 0.4s;
+    cursor: pointer;
 }
+
+.merina:hover {
+    /* outline: 2px solid black; */
+    box-shadow:
+        -2px 2px 9px rgba(33, 92, 162, 255),
+        /* Bottom-left */
+        2px 2px 9px rgba(33, 92, 162, 255),
+        /* Bottom-right */
+        -2px -2px 9px rgba(33, 92, 162, 255),
+        /* Top-left */
+        2px -2px 9px rgba(33, 92, 162, 255);
+    /* Top-right */
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 
 .read-more-toggle {
     color: #1449f7;
@@ -174,14 +210,14 @@ html {
 
 
 #contact .unique-container {
-    background: aliceblue;
+    background: rgb(217, 444, 241);
     border-radius: 8px;
     padding: 3rem 5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #contact .unique-container-2 {
-    background: aliceblue;
+    background: white;
     border-radius: 8px;
     padding: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -351,7 +387,7 @@ html {
 }
 
 /* Image Custom  */
-.cutomizing-image{
+.cutomizing-image {
     margin-top: 20px;
     outline: 2px solid grey;
     padding: 2px;
